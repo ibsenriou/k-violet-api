@@ -55,12 +55,25 @@ INSTALLED_APPS = [
 
 ]
 
+# Temporary middleware class
+class DisableCsrfMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        if request.path.startswith('/api/'):
+            setattr(request, '_dont_enforce_csrf_checks', True)
+        return self.get_response(request)
+
+
 MIDDLEWARE = [
+    'settings.settings.DisableCsrfMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # TODO - Re enable CSRF Middleware after implementing CSRF Token on Frontend
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',

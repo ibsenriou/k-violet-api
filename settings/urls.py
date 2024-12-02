@@ -14,6 +14,7 @@ urlpatterns = ([
     path('api/auth/user/', CustomUserDetailView.as_view(), name='user-detail'),
 
     path('api/core/', include('src.core.urls')),
+    path('api/auth/', include('src.auth.urls')),
 
 
     # Open API 3 schema
