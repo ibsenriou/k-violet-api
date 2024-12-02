@@ -1,7 +1,7 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
-
+from src.core.views.view_test import TestModelViewSet
 
 router = DefaultRouter()
 app_name = 'core'
@@ -14,6 +14,8 @@ app_name = 'core'
 # router.register('district', DistrictModelViewSet, basename='district')
 # router.register('measurement_unit', MeasurementUnitModelViewSet, basename='measurement_unit')
 # router.register('bank', BankModelViewSet, basename='bank')
+
+router.register('test', TestModelViewSet, basename='test')
 
 
 urlpatterns = [

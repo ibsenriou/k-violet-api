@@ -13,13 +13,16 @@ urlpatterns = ([
     # Place this before the default auth urls, so that the custom one is used
     path('api/auth/user/', CustomUserDetailView.as_view(), name='user-detail'),
 
-    # # Open API 3 schema
-    # path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-    # # Optional UI:
-    # path('api/schema/swagger-ui/',
-    #      SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-    # path('api/schema/redoc/',
-    #      SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+    path('api/core/', include('src.core.urls')),
+
+
+    # Open API 3 schema
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    # Optional UI:
+    path('api/schema/swagger-ui/',
+         SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    path('api/schema/redoc/',
+         SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
