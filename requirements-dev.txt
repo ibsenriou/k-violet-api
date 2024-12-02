@@ -1,0 +1,7 @@
+# Install project dependencies
+-r requirements.txt
+
+# Install Dev dependencies
+
+django-test-without-migrations==0.6
+coverage==7.2.7
