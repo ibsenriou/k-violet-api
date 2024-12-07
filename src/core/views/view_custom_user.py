@@ -3,6 +3,12 @@ from dj_rest_auth.views import UserDetailsView
 
 from src.core.serializers.serializer_custom_user import CustomUserSerializer
 
+from django.core.exceptions import ObjectDoesNotExist
+from rest_framework import viewsets
+from rest_framework.decorators import action
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.response import Response
+
 
 class CustomUserDetailView(UserDetailsView):
     serializer_class = CustomUserSerializer
@@ -11,14 +17,17 @@ class CustomUserDetailView(UserDetailsView):
     def get_object(self):
         return self.request.user
 
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
+    @action(detail=True)
+    def add_points(self, request, pk=None, **kwargs) -> Response:
+        """
+        Add points and amassed points to the user
+        """
+        user = self.get_object()
+        points = request.data.get('points')
 
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
+        user.points += points
+        user.amassed_points += points
+        user.save()
 
-    def update(self, request, *args, **kwargs):
-        return super().update(request, *args, **kwargs)
-
-    def destroy(self, request, *args, **kwargs):
-        return super().destroy(request, *args, **kwargs)
+        serializer = CustomUserSerializer(user)
+        return Response(serializer.data)

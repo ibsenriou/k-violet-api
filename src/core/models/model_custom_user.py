@@ -35,6 +35,12 @@ class CustomUserManager(BaseUserManager):
 
         return self.create_user(email, password, **extra_fields)
 
+    def add_points(self, user: "CustomUser", points: int) -> "CustomUser":
+        user.points += points
+        user.amassed_points += points
+        user.save()
+        return user
+
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
     """
@@ -48,6 +54,9 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     last_name = models.CharField(max_length=30)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
+
+    points = models.IntegerField(default=0)
+    amassed_points = models.IntegerField(default=0)
 
 
     objects = CustomUserManager()
