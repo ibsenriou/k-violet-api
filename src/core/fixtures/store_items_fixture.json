@@ -1,0 +1,119 @@
+[
+    {
+        "model": "core.storeitem",
+        "pk": 1,
+        "fields": {
+            "name": "Vale Doce",
+            "cost": 300,
+            "image": "/images/little-store/icons/candy2.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 2,
+        "fields": {
+            "name": "Vale Brinquedo",
+            "cost": 500,
+            "image": "/images/little-store/icons/toy2.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 3,
+        "fields": {
+            "name": "Passeio no Parquinho",
+            "cost": 100,
+            "image": "/images/little-store/icons/park.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 4,
+        "fields": {
+            "name": "Vale Cinema",
+            "cost": 5000,
+            "image": "/images/little-store/icons/cinema2.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 5,
+        "fields": {
+            "name": "Dia do Pijama",
+            "cost": 900,
+            "image": "/images/little-store/icons/pijama.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 6,
+        "fields": {
+            "name": "Adesivo Especial",
+            "cost": 150,
+            "image": "/images/little-store/icons/sticker.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 7,
+        "fields": {
+            "name": "Hora Extra de Desenho",
+            "cost": 250,
+            "image": "/images/little-store/icons/drawing.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 8,
+        "fields": {
+            "name": "História na Hora de Dormir",
+            "cost": 300,
+            "image": "/images/little-store/icons/storybook.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 9,
+        "fields": {
+            "name": "Vale Jogo de Tabuleiro",
+            "cost": 450,
+            "image": "/images/little-store/icons/boardgame.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 10,
+        "fields": {
+            "name": "Bexiga Surpresa",
+            "cost": 1500,
+            "image": "/images/little-store/icons/balloon2.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 11,
+        "fields": {
+            "name": "Dia Sem Tarefas",
+            "cost": 7000,
+            "image": "/images/little-store/icons/noduties2.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 12,
+        "fields": {
+            "name": "Cesta de Guloseimas",
+            "cost": 2000,
+            "image": "/images/little-store/icons/snackbasket.webp"
+        }
+    },
+    {
+        "model": "core.storeitem",
+        "pk": 13,
+        "fields": {
+            "name": "Vale Abraço",
+            "cost": 50,
+            "image": "/images/little-store/icons/hug2.webp"
+        }
+    }
+]

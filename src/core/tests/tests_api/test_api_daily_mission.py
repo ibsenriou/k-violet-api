@@ -59,5 +59,3 @@ class PrivateDailyMissionAPITests(AuthenticatedAPITestCase):
 
         self.assertEqual(self.response.status_code, status.HTTP_200_OK)
         self.assertEqual(first_mission_description_results, first_mission_description_data)
-
-    def test_

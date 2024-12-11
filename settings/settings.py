@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     # --- DRF Spectacular Handles API Schema Generation for OpenAPI Documentation
     'drf_spectacular',
 
-    # 'test_without_migrations'
+    'test_without_migrations'
 
 
 ]
