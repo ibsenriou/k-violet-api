@@ -35,3 +35,5 @@ typing_extensions==4.9.0
 psycopg2-binary
 django-storages[google]
 django-environ
+
+django-test-without-migrations==0.6
