@@ -22,8 +22,8 @@ class DailyMission(models.Model):
             raise Exception('Missão já concluída')
 
         user = self.fk_user
-        user.points += self.points
-        user.amassed_points += self.points
+        user.coins += self.points
+        user.amassed_coins += self.points
         user.save()
 
         self.is_completed = True

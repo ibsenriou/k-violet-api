@@ -7,7 +7,7 @@ from src.core.models.model_custom_user import CustomUserManager
 
 @admin.register(CustomUser)
 class CustomUserAdmin(UserAdmin):
-    list_display = ('id', 'email', 'first_name', 'last_name', 'is_staff', 'is_active', 'points', 'amassed_points')
+    list_display = ('id', 'email', 'first_name', 'last_name', 'is_staff', 'is_active', 'coins', 'amassed_coins')
     list_filter = ('is_staff', 'is_active')
     search_fields = ('email', 'first_name', 'last_name')
     ordering = ('email',)

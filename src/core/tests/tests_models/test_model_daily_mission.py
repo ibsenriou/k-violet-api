@@ -50,8 +50,8 @@ class DailyMissionTest(TestCase):
     def test_complete_mission(self):
         self.mission.complete_mission()
         self.assertTrue(self.mission.is_completed)
-        self.assertEqual(self.user.points, 10)
-        self.assertEqual(self.user.amassed_points, 10)
+        self.assertEqual(self.user.coins, 10)
+        self.assertEqual(self.user.amassed_coins, 10)
 
     def test_completed_mission_cannot_be_completed_again(self):
         self.mission.complete_mission()

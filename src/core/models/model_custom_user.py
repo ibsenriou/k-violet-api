@@ -55,8 +55,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
-    points = models.IntegerField(default=0)
-    amassed_points = models.IntegerField(default=0)
+    coins = models.IntegerField(default=0)
+    amassed_coins = models.IntegerField(default=0)
 
 
     objects = CustomUserManager()
