@@ -1,6 +1,8 @@
 import os
 import json
 from datetime import date, timedelta
+
+from django.core.management import call_command
 from django.core.management.base import BaseCommand, CommandError
 from django.contrib.auth import get_user_model
 from src.core.models import DailyMission
@@ -123,3 +125,10 @@ class Command(BaseCommand):
             json.dump(fixture, f, ensure_ascii=False, indent=4)
 
         self.stdout.write(self.style.SUCCESS(f"Fixture created with {len(fixture)} entries at {fixture_path}."))
+
+        # Load the fixture into the database
+        try:
+            call_command("loaddata", fixture_path)
+            self.stdout.write(self.style.SUCCESS("Fixture applied successfully to the database."))
+        except Exception as e:
+            raise CommandError(f"Failed to apply fixture: {str(e)}")
