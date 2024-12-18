@@ -23,7 +23,7 @@ class Command(BaseCommand):
         except User.DoesNotExist:
             raise CommandError(f"No user found with email: {user_email}")
 
-        # Define tasks for each day of the week
+        # Define tasks for each day of the week (Sunday to Saturday)
         weekly_tasks = {
             0: [  # Sunday
                 {"description": "Arrumar a cama", "points": 20},
@@ -33,7 +33,54 @@ class Command(BaseCommand):
                 {"description": "Fazer um desenho ou pintura", "points": 30},
                 {"description": "Ajudar a guardar a louça", "points": 50}
             ],
-            # Add other days here...
+            1: [  # Monday
+                {"description": "Arrumar a cama", "points": 20},
+                {"description": "Fazer a lição de casa", "points": 40},
+                {"description": "Ler um livro por 20 minutos", "points": 40},
+                {"description": "Organizar o material escolar", "points": 30},
+                {"description": "Ajudar a preparar o lanche", "points": 40},
+                {"description": "Guardar os brinquedos", "points": 30}
+            ],
+            2: [  # Tuesday
+                {"description": "Arrumar a cama", "points": 20},
+                {"description": "Fazer a lição de casa", "points": 40},
+                {"description": "Ler um livro por 20 minutos", "points": 30},
+                {"description": "Ajudar a organizar a sala", "points": 40},
+                {"description": "Ajudar a cuidar das plantas", "points": 40},
+                {"description": "Guardar os brinquedos", "points": 30}
+            ],
+            3: [  # Wednesday
+                {"description": "Arrumar a cama", "points": 20},
+                {"description": "Fazer a lição de casa", "points": 50},
+                {"description": "Ler um livro por 20 minutos", "points": 30},
+                {"description": "Ajudar a separar o lixo reciclável", "points": 50},
+                {"description": "Ajudar a organizar os brinquedos", "points": 30},
+                {"description": "Fazer um desenho ou pintura", "points": 20}
+            ],
+            4: [  # Thursday
+                {"description": "Arrumar a cama", "points": 20},
+                {"description": "Fazer a lição de casa", "points": 40},
+                {"description": "Ler um livro por 20 minutos", "points": 30},
+                {"description": "Ajudar a limpar o quarto", "points": 50},
+                {"description": "Ajudar a preparar o jantar", "points": 40},
+                {"description": "Guardar os brinquedos", "points": 20}
+            ],
+            5: [  # Friday
+                {"description": "Arrumar a cama", "points": 20},
+                {"description": "Fazer a lição de casa", "points": 40},
+                {"description": "Ler um livro por 20 minutos", "points": 30},
+                {"description": "Ajudar a limpar a cozinha", "points": 50},
+                {"description": "Organizar os materiais escolares", "points": 30},
+                {"description": "Fazer um desenho ou pintura", "points": 30}
+            ],
+            6: [  # Saturday
+                {"description": "Arrumar a cama", "points": 20},
+                {"description": "Passear com o cachorro", "points": 40},
+                {"description": "Ler um livro por 20 minutos", "points": 30},
+                {"description": "Ajudar a preparar o almoço", "points": 50},
+                {"description": "Ajudar a organizar o quarto", "points": 40},
+                {"description": "Fazer um desenho ou pintura", "points": 20}
+            ]
         }
 
         # Date range: December 2024 through December 2025
