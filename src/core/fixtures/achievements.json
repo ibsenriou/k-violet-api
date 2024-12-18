@@ -1,0 +1,183 @@
+[
+    {
+        "model": "core.achievement",
+        "pk": 1,
+        "fields": {
+            "name": "Começo Doce",
+            "description": "Ganhe 50 pontos e desbloqueie uma surpresa doce!",
+            "target_points": 50,
+            "image": "candy.webp",
+            "unlocked_message": "Parabéns! Você ganhou um pirulito como recompensa doce!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 2,
+        "fields": {
+            "name": "Campeão dos Adesivos",
+            "description": "Alcance 100 pontos e desbloqueie algo divertido para sua coleção.",
+            "target_points": 100,
+            "image": "sticker.webp",
+            "unlocked_message": "Uau! Você desbloqueou um conjunto de adesivos coloridos!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 3,
+        "fields": {
+            "name": "Hora do Brinquedo",
+            "description": "Chegue a 200 pontos e ganhe um brinquedo especial só para você.",
+            "target_points": 200,
+            "image": "toy.webp",
+            "unlocked_message": "Incrível! Você ganhou um carrinho ou uma boneca!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 4,
+        "fields": {
+            "name": "Pausa Divertida",
+            "description": "Acumule 500 pontos e desbloqueie uma atividade emocionante.",
+            "target_points": 500,
+            "image": "activity.webp",
+            "unlocked_message": "Fantástico! Você ganhou uma noite de cinema ou um passeio no parque!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 5,
+        "fields": {
+            "name": "Aventura em Família",
+            "description": "Chegue a 1000 pontos e ganhe uma experiência inesquecível.",
+            "target_points": 1000,
+            "image": "family_outing.webp",
+            "unlocked_message": "Incrível! Você desbloqueou uma aventura em família, como um piquenique ou visita a um zoológico!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 6,
+        "fields": {
+            "name": "Mestre das Cores",
+            "description": "Complete 1500 pontos para ganhar algo muito criativo!",
+            "target_points": 1500,
+            "image": "art_kit.webp",
+            "unlocked_message": "Parabéns! Você ganhou um kit de artes com lápis de cor e tintas!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 7,
+        "fields": {
+            "name": "Explorador Espacial",
+            "description": "Ganhe 2000 pontos e prepare-se para explorar as estrelas!",
+            "target_points": 2000,
+            "image": "telescope.webp",
+            "unlocked_message": "Uau! Você desbloqueou um pequeno telescópio para explorar o céu!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 8,
+        "fields": {
+            "name": "Rei da Aventura",
+            "description": "Alcance 3000 pontos para uma experiência única ao ar livre.",
+            "target_points": 3000,
+            "image": "camping.webp",
+            "unlocked_message": "Incrível! Você ganhou um kit para acampamento com barraca e lanterna!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 9,
+        "fields": {
+            "name": "Inventor Criativo",
+            "description": "Ganhe 4000 pontos e desbloqueie um prêmio que desperta a criatividade.",
+            "target_points": 4000,
+            "image": "lego.webp",
+            "unlocked_message": "Fantástico! Você ganhou um kit de blocos de montar para criar o que imaginar!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 10,
+        "fields": {
+            "name": "Estrela da Música",
+            "description": "Chegue a 5000 pontos para liberar um prêmio musical.",
+            "target_points": 5000,
+            "image": "music_instrument.webp",
+            "unlocked_message": "Parabéns! Você desbloqueou uma flauta ou um tambor para começar sua jornada musical!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 11,
+        "fields": {
+            "name": "Chefe de Cozinha",
+            "description": "Alcance 6000 pontos e ganhe algo especial para aprender na cozinha.",
+            "target_points": 6000,
+            "image": "cooking.webp",
+            "unlocked_message": "Delicioso! Você ganhou um kit de mini confeiteiro para fazer bolos e doces!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 12,
+        "fields": {
+            "name": "Explorador da Natureza",
+            "description": "Ganhe 7500 pontos e desbloqueie algo para aventuras ao ar livre.",
+            "target_points": 7500,
+            "image": "explorer_kit.webp",
+            "unlocked_message": "Uau! Você desbloqueou um kit de exploração com lupa, binóculo e bússola!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 13,
+        "fields": {
+            "name": "Mestre do Conhecimento",
+            "description": "Acumule 9000 pontos e receba um presente que expande sua mente!",
+            "target_points": 9000,
+            "image": "book.webp",
+            "unlocked_message": "Incrível! Você ganhou um livro cheio de histórias e aventuras!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 14,
+        "fields": {
+            "name": "Estrela do Esporte",
+            "description": "Alcance 11000 pontos e ganhe algo para jogar com seus amigos.",
+            "target_points": 11000,
+            "image": "sports_kit.webp",
+            "unlocked_message": "Parabéns! Você desbloqueou uma bola ou raquete para brincar ao ar livre!",
+            "is_secret": true
+        }
+    },
+    {
+        "model": "core.achievement",
+        "pk": 15,
+        "fields": {
+            "name": "Herói da Galáxia",
+            "description": "Ganhe 13000 pontos e desbloqueie um prêmio épico e espacial.",
+            "target_points": 13000,
+            "image": "space_adventure.webp",
+            "unlocked_message": "Sensacional! Você ganhou um modelo de foguete ou um quebra-cabeça espacial!",
+            "is_secret": true
+        }
+    }
+]
+

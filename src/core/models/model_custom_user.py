@@ -36,8 +36,8 @@ class CustomUserManager(BaseUserManager):
         return self.create_user(email, password, **extra_fields)
 
     def add_points(self, user: "CustomUser", points: int) -> "CustomUser":
-        user.points += points
-        user.amassed_points += points
+        user.coins += points
+        user.amassed_coins += points
         user.save()
         return user
 

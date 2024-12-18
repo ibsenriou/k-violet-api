@@ -43,7 +43,7 @@ class PrivateStoreItemAPITests(AuthenticatedAPITestCase):
         ]
 
         # Queryset objects and pass to the serializer
-        self.store_item_queryset = StoreItem.objects.all().order_by('-id')
+        self.store_item_queryset = StoreItem.objects.all().order_by('id')
         self.serializer = StoreItemSerializer(self.store_item_queryset, many=True)
 
         # Makes API call to get the Response
